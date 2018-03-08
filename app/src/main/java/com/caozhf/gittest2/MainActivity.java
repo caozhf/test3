@@ -6,7 +6,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     String bb = "ff";
-
+    String ff = "bb";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
