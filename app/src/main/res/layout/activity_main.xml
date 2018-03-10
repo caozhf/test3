@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.caozhf.gittest2.MainActivity">
 
-    <TextView
+    <com.baidu.mapapi.map.MapView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AAAAAAAAAAAAAAAAAAAAA"
-        android:textColor="@drawable/myc"
+        android:layout_height="300dp"
         android:clickable="true"
-        android:textSize="30sp" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:spinnerMode="dropdown"
-        android:id="@+id/spinner"></Spinner>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/newbutton"
-        android:onClick="Dialog"/>
+        android:id="@+id/bmapView"></com.baidu.mapapi.map.MapView>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="PopMenu"/>
+        android:text="original"
+        android:id="@+id/original"
+        android:layout_gravity="center_horizontal|top" />
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="traffic"
+        android:id="@+id/traffic"
+        android:layout_gravity="right|top" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="satellite"
+        android:id="@+id/satellite"
+        android:layout_gravity="left|top" />
+
+</FrameLayout>
